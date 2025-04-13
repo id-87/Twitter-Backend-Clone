@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}
+Tweeeeeeettttttt
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center text-white">Welcome to Backtweet</h1>
+<form method="post">
+    {% csrf_token %}
+    <textarea name="content" rows="4" cols="50" placeholder="Write your tweet here..."></textarea><br>
+    <button type="submit">Post Tweet</button>
+</form>
+{%endblock%}
